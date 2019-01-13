@@ -7,12 +7,12 @@ const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
         {/* TODO: make the margin responsive */}
-            <img style={{borderRadius: '50%', marginTop: '18px'}} src={hummingbird} alt="" height="50" width="50" />
+            <img style={{borderRadius: '50%'}} src={hummingbird} alt="" height="87" width="87" />
         </div>
         <div className="content">
             <div className="inner">
                 <h1>Gray Hummingbird</h1>
-                <p>Come to us for all of your tech needs. Advice. Websites. Fun. We do it all.</p>
+                <p>Come to us for all of your tech needs. Advice. Websites. Interesting conversations. We can help.</p>
             </div>
         </div>
         <nav>
