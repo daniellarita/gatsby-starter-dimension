@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import blueHummingbird from '../images/blue_hummingbird.jpg'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
@@ -15,9 +16,9 @@ class Main extends React.Component {
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <span className="image main"><img src={blueHummingbird} alt="" /></span>
+          <p>Hummingbirds weigh only 2 grams. This means 16 of them could be sent in the mail with only one stamp. Relative to their tiny size, they are extremely powerful and can fly at speeds of 60 mph, migrate 3,000 miles from Mexico to Alaska every year and fly for 20 hours straight. They are also so beautiful! </p>
+          <p>We love to build beautiful websites and provide guidance to all, especially to minorities and women.</p>
           {close}
         </article>
 
@@ -59,8 +60,8 @@ class Main extends React.Component {
           <ul className="icons">
             <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
             <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            {/* <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li> */}
           </ul>
           {close}
         </article>
