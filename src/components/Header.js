@@ -6,7 +6,8 @@ import hummingbird from '../images/hummingbird.png'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            <img style={{borderRadius: '50%', marginTop: '9px'}} src={hummingbird} alt="" height="50" width="50" />
+        {/* TODO: make the margin responsive */}
+            <img style={{borderRadius: '50%', marginTop: '18px'}} src={hummingbird} alt="" height="50" width="50" />
         </div>
         <div className="content">
             <div className="inner">
