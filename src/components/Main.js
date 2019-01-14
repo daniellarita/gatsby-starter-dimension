@@ -2,11 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import blueHummingbird from '../images/blue_hummingbird.jpg'
-import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
+
+  handleSubmit = () => {
+    console.log("function ran")
+  }
+
   render() {
 
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
@@ -39,7 +43,13 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true" netlify>
+          <form
+            className="gform"
+            method="post"
+            data-email="grayhummingbirdtech@gmail.com"
+            action="https://script.google.com/macros/s/AKfycbxWb5MLysWT4D4pYcZFZUMKkjGMw_BDgK4G-BHy/exec"
+            onSubmit={this.handleSubmit()}
+          >
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -53,15 +63,19 @@ class Main extends React.Component {
               <textarea name="message" id="message" rows="4"></textarea>
             </div>
             <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
+              <li>
+                <input type="submit" value="Send Message" className="special" onClick={() => {this.props.onCloseArticle()}} />
+              </li>
+              <li>
+                <input type="reset" value="Reset" />
+              </li>
             </ul>
           </form>
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            {/* <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li> */}
+            <li><a href="https://twitter.com/grayhummingbird" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/grayhummingbirdtech/" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/grayhummingbirdtech/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="https://github.com/dannibaxter" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
