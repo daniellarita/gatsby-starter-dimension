@@ -44,11 +44,6 @@ class Main extends React.Component {
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
           <form
-            // className="gform"
-            // method="post"
-            // data-email ="grayhummingbirdtech@gmail.com"
-            // action="https://script.google.com/macros/s/AKfycbxWb5MLysWT4D4pYcZFZUMKkjGMw_BDgK4G-BHy/exec"
-            // onSubmit={this.handleSubmit()}
             action="https://formspree.io/grayhummingbirdtech@gmail.com"
             method="POST"
           >
