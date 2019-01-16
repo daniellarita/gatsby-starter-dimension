@@ -5,6 +5,17 @@ module.exports = {
     description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/favicon.png",
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+        }
+      }
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
