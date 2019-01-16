@@ -1,14 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import hummingbird from '../images/hummingbird.png'
+import hummingbird from '../images/hummingbird_image_whitespace.png'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="logo">
-        {/* TODO: make the margin responsive */}
-            <img style={{borderRadius: '50%'}} src={hummingbird} alt="" height="87" width="87" />
-        </div>
+        <img
+            style={{
+                borderRadius: '50%',
+            }}
+            src={hummingbird}
+            alt=""
+            height="75"
+            width="75" />
         <div className="content">
             <div className="inner">
                 <h1>Gray Hummingbird</h1>
