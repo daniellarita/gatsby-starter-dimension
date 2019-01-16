@@ -16,7 +16,7 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
           <p>Hummingbirds are the smallest bird, but they are also the fastest birds and can fly at speeds of 60 mph (faster than a fighter jet!) and migrate 3,000 miles across the World. They are also so beautiful. </p>
-          <p>I am inspired by the beauty and power of such a small creature. I want to help those that may feel underrepresented in tech spaces, especially women and artists.</p>
+          <p>I am inspired by the beauty and power of such a small being. I want to help those that may feel underrepresented in tech spaces, especially women and artists.</p>
           <span className="image main"><img src={blueHummingbird} alt="" /></span>
           {close}
         </article>
