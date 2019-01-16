@@ -16,7 +16,7 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Gray Hummingbird</h1>
-                <p>Come to us for all of your tech needs. Advice. Websites. Interesting conversations. We can help.</p>
+                <p> Websites. Tech Advice. Etc. (Especially for Women, Artists and those changing the world) </p>
             </div>
         </div>
         <nav>
