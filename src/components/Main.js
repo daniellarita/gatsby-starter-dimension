@@ -2,15 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import blueHummingbird from '../images/blue_hummingbird.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import greenHummingbird from '../images/green_hummingbird.png'
+import danni from '../images/danni_blue_hat.jpg'
 
 class Main extends React.Component {
-
-  handleSubmit = () => {
-    console.log("function ran")
-  }
-
   render() {
 
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
@@ -20,24 +15,24 @@ class Main extends React.Component {
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
+          <p>Hummingbirds are the smallest bird, but they are also the fastest birds and can fly at speeds of 60 mph (faster than a fighter jet!) and migrate 3,000 miles across the World. They are also so beautiful. </p>
+          <p>I am inspired by the beauty and power of such a small creature. I want to help those that may feel underrepresented in tech spaces, especially women and artists.</p>
           <span className="image main"><img src={blueHummingbird} alt="" /></span>
-          <p>Hummingbirds weigh only 2 grams. This means 16 of them could be sent in the mail with only one stamp. Relative to their tiny size, they are extremely powerful and can fly at speeds of 60 mph, migrate 3,000 miles from Mexico to Alaska every year and fly for 20 hours straight. They are also so beautiful! </p>
-          <p>We love to build beautiful websites and provide guidance to all, especially to minorities and women.</p>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+          <p>I can help you build a website, come up with a powerful UX design and answer any other questions you may have.</p>
+          <span className="image main"><img src={greenHummingbird} alt="" /></span>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>Hi! I have 3 years of experience working as a fullstack engineer at a fast growing startup. I worked at WeWork from 2015 until 2019 as the tech team grew from 40 to about 500. I have also worked as a Product Manager and closely with design during my time at WeWork.</p>
+          <p>I am especially passionate about helping women and artists, as I know how challenging navigating the tech space can be. Let me know if you have any questions or projects and would like to work together!</p>
+          <span className="image main"><img src={danni} alt="" /></span>
           {close}
         </article>
 
