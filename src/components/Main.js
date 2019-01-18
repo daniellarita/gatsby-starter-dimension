@@ -16,7 +16,7 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
           <p>Hummingbirds are the smallest bird, but they are also the fastest birds and can fly at speeds of 60 mph and migrate 3,000 miles across the World. They are also so beautiful. </p>
-          <p>I am inspired by the beauty and power of such a small being. I want to help those that may feel underrepresented in tech spaces, especially women and artists.</p>
+          <p>I am inspired by the beauty and power of such a small being, and I aspire to build products in the same way. I can help you build a website that is user friendly and touches your target audience. I want to help those that may feel underrepresented in tech spaces, especially women and artists.</p>
           <span className="image main"><img src={blueHummingbird} alt="" /></span>
           {close}
         </article>
@@ -24,7 +24,14 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
           <p>I can help you build a website, come up with a powerful UX design and answer any other questions you may have.</p>
-          <span className="image main"><img src={greenHummingbird} alt="" /></span>
+          <ul>
+            <li>Web development</li>
+            <li>SEO strategy</li>
+            <li>Content Management</li>
+            <li>User experience design</li>
+            <li>Product development</li>
+            <li>General tech consulting</li>
+          </ul>
           {close}
         </article>
 
