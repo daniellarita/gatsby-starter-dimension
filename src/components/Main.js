@@ -45,6 +45,7 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
+          <p>You came to the right place. Let's talk tech strategy and web development.</p>
           <form
             action="https://formspree.io/grayhummingbirdtech@gmail.com"
             method="POST"
