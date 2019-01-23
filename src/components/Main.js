@@ -27,7 +27,7 @@ class Main extends React.Component {
           <ul>
             <li>Web development</li>
             <li>SEO strategy</li>
-            <li>Content Management</li>
+            <li>Content management</li>
             <li>User experience design</li>
             <li>Product development</li>
             <li>General tech consulting</li>
